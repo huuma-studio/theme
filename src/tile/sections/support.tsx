@@ -14,7 +14,7 @@ export function SupportSection({ titleSlot, children }: SupportSectionProps) {
       maxWidth="7xl"
       titleSlot={titleSlot}
     >
-      <div class="tetra__support-section__wrapper">
+      <div class="tile__support-section__wrapper">
         {children}
       </div>
     </Section>
@@ -33,12 +33,12 @@ export interface SupportCardProps extends Props {
 
 export function SupportCard({ headerSlot, listItems }: SupportCardProps) {
   return (
-    <div class="tetra__support__card">
+    <div class="tile__support__card">
       {headerSlot}
       {listItems.length && (
         <ul>
           {listItems.map((listItem) => (
-            <li class="tetra__support__card__list__item">
+            <li class="tile__support__card__list__item">
               {listItem.title}
               {listItem.option && (
                 <div>{<OptionIcon option={listItem.option} />}</div>
@@ -61,17 +61,17 @@ export function SupportCardHeader(
   { title, price, prefixPrice }: SupportCardHeaderProps,
 ) {
   return (
-    <div class="tetra__support__card__header">
-      <h2 class="heading-base tetra__support__card__headline">
+    <div class="tile__support__card__header">
+      <h2 class="heading-base tile__support__card__headline">
         {title}
       </h2>
-      <div class="tetra__support__card__header__price">
+      <div class="tile__support__card__header__price">
         {prefixPrice && (
-          <div class="tetra__support__card__header__price__prefix">
+          <div class="tile__support__card__header__price__prefix">
             {prefixPrice}
           </div>
         )}
-        <span class="tetra__support__card__header__price__amount">
+        <span class="tile__support__card__header__price__amount">
           {price}
         </span>
       </div>

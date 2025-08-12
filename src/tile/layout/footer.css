@@ -1,38 +1,38 @@
-.tetra__footer {
+.tile__footer {
     background-color: var(
         --footer-color-background,
-        var(--tetra-color-primary-100)
+        var(--tile-color-primary-100)
     );
     color: var(--footer-color-text);
     border-top: 1px solid var(--footer-color-border, #00000022);
 }
-.tetra__footer_wrapper {
-    max-width: var(--tetra-max-w-7xl);
+.tile__footer_wrapper {
+    max-width: var(--tile-max-w-7xl);
     margin-inline: auto;
-    padding-inline: calc(var(--tetra-spacing) * 4);
+    padding-inline: calc(var(--tile-spacing) * 4);
     @media (min-width: 960px) {
-        padding-inline: calc(var(--tetra-spacing) * 8);
+        padding-inline: calc(var(--tile-spacing) * 8);
     }
 }
-.tetra__footer__grid {
+.tile__footer__grid {
     display: grid;
-    gap: calc(var(--tetra-spacing) * 8);
-    padding-block: calc(var(--tetra-spacing) * 8);
+    gap: calc(var(--tile-spacing) * 8);
+    padding-block: calc(var(--tile-spacing) * 8);
     grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-.tetra__footer__col__logo {
+.tile__footer__col__logo {
     grid-column: span 5 / span 5;
     @media (min-width: 768px) {
         grid-column: span 1 / span 1;
     }
 }
-.tetra__footer_col__nav {
+.tile__footer_col__nav {
     grid-column: span 5 / span 5;
     @media (min-width: 768px) {
         grid-column: span 4 / span 4;
     }
 }
-.tetra__footer__legal {
-    padding-block: calc(var(--tetra-spacing) * 4);
+.tile__footer__legal {
+    padding-block: calc(var(--tile-spacing) * 4);
     border-top: 1px solid var(--footer-color-border, #00000022);
 }

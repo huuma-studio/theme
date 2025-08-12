@@ -1,5 +1,5 @@
-import { Stylesheet, UIApp } from "@huuma/ui/server";
-import { AppContext } from "@huuma/route";
+import type { Stylesheet, UIApp } from "@huuma/ui/server";
+import type { AppContext } from "@huuma/route";
 
 export interface Theme {
   stylesheets: Stylesheet[];

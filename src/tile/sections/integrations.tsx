@@ -15,11 +15,11 @@ export function IntegrationsSection(
       titleSlot={titleSlot}
       maxWidth="7xl"
       padding="lg"
-      class="tetra__integrations-section"
+      class="tile__integrations-section"
     >
       {children}
       {callToActionSlot && (
-        <div class="tetra__integrations__cta">
+        <div class="tile__integrations__cta">
           {callToActionSlot}
         </div>
       )}

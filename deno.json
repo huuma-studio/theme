@@ -1,4 +1,9 @@
 {
+  "name": "@huuma/theme",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/mod.ts"
+  },
   "tasks": {
     "check": "deno check"
   },
@@ -6,5 +11,8 @@
     "@huuma/icons": "jsr:@huuma/icons@^0.0.1",
     "@huuma/route": "jsr:@huuma/route@^0.0.6",
     "@huuma/ui": "jsr:@huuma/ui@^0.0.31"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
   }
 }

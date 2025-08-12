@@ -3,7 +3,7 @@ import MenuIcon from "@huuma/icons/pixelarticons/menu";
 import { $mount } from "@huuma/ui/hooks/lifecycle";
 import type { JSX } from "@huuma/ui/jsx-runtime";
 import { $signal } from "@huuma/ui/hooks/signal";
-import { Props } from "@huuma/ui";
+import type { Props } from "@huuma/ui";
 
 export interface HeaderProps extends Props {
   bannerSlot?: JSX.Element;
@@ -32,17 +32,15 @@ export function Header(
   return (
     <>
       {bannerSlot && (
-        <nav class="tetra__banner">
-          <div class="tetra__banner__wrapper">{bannerSlot}</div>
+        <nav class="tile__banner">
+          <div class="tile__banner__wrapper">{bannerSlot}</div>
         </nav>
       )}
       <header
-        class={open.get()
-          ? "tetra__header tetra__header--open"
-          : "tetra__header"}
+        class={open.get() ? "tile__header tile__header--open" : "tile__header"}
       >
-        <nav class="tetra__header__wrapper">
-          {logoSlot && <div class="tetra__header__logo">{logoSlot}</div>}
+        <nav class="tile__header__wrapper">
+          {logoSlot && <div class="tile__header__logo">{logoSlot}</div>}
           {navItems?.length
             ? (
               <NavItems
@@ -53,7 +51,7 @@ export function Header(
             )
             : children}
           <button
-            class="tetra__header__navigation__menu__button"
+            class="tile__header__navigation__menu__button"
             type="button"
             on-click={() => {
               open.set(!open.get());
@@ -87,7 +85,7 @@ interface NavItemsProps extends Props {
 
 function NavItems({ navItems, callToActionSlot, closeFn }: NavItemsProps) {
   return (
-    <ul class="tetra__header__navigation">
+    <ul class="tile__header__navigation">
       {navItems.map((navItem) => (
         <li>
           <a

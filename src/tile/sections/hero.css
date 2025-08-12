@@ -1,22 +1,22 @@
-.tetra__hero {
+.tile__hero {
     background-color: var(--hero-color-background);
 }
-.tetra__hero__wrapper {
+.tile__hero__wrapper {
     @media (min-width: 768px) {
-        padding-block: calc(var(--tetra-spacing) * 23);
+        padding-block: calc(var(--tile-spacing) * 23);
     }
-    padding-block: calc(var(--tetra-spacing) * 16);
+    padding-block: calc(var(--tile-spacing) * 16);
     margin-inline: auto;
-    max-width: var(--tetra-max-w-3xl);
+    max-width: var(--tile-max-w-3xl);
     text-align: center;
     color: var(--hero-color-text);
 }
 
-.tetra__hero__heading {
+.tile__hero__heading {
     color: var(--hero-color-heading);
 }
 
-.tetra__hero__teaser {
+.tile__hero__teaser {
     font-size: 1.5rem;
-    margin-block: calc(var(--tetra-spacing) * 4);
+    margin-block: calc(var(--tile-spacing) * 4);
 }

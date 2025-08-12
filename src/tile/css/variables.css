@@ -1,123 +1,120 @@
 :root {
-    --tetra-max-w-xs: 20rem; /* 320px */
-    --tetra-max-w-sm: 24rem; /* 384px */
-    --tetra-max-w-md: 28rem; /* 448px */
-    --tetra-max-w-lg: 32rem; /* 512px */
-    --tetra-max-w-xl: 36rem; /* 576px */
-    --tetra-max-w-2xl: 42rem; /* 672px */
-    --tetra-max-w-3xl: 48rem; /* 768px */
-    --tetra-max-w-4xl: 56rem; /* 896px */
-    --tetra-max-w-5xl: 64rem; /* 1024px */
-    --tetra-max-w-6xl: 72rem; /* 1152px */
-    --tetra-max-w-7xl: 80rem; /* 1280px */
+    --tile-max-w-xs: 20rem; /* 320px */
+    --tile-max-w-sm: 24rem; /* 384px */
+    --tile-max-w-md: 28rem; /* 448px */
+    --tile-max-w-lg: 32rem; /* 512px */
+    --tile-max-w-xl: 36rem; /* 576px */
+    --tile-max-w-2xl: 42rem; /* 672px */
+    --tile-max-w-3xl: 48rem; /* 768px */
+    --tile-max-w-4xl: 56rem; /* 896px */
+    --tile-max-w-5xl: 64rem; /* 1024px */
+    --tile-max-w-6xl: 72rem; /* 1152px */
+    --tile-max-w-7xl: 80rem; /* 1280px */
 
-    --tetra-color-gray-50: #fafafa;
-    --tetra-color-gray-100: #f5f5f5;
-    --tetra-color-gray-200: #e5e5e5;
-    --tetra-color-gray-300: #d4d4d4;
-    --tetra-color-gray-400: #a3a3a3;
-    --tetra-color-gray-500: #737373;
-    --tetra-color-gray-600: #525252;
-    --tetra-color-gray-700: #404040;
-    --tetra-color-gray-800: #262626;
-    --tetra-color-gray-900: #171717;
-    --tetra-color-gray-950: #0a0a0a;
+    --tile-color-gray-50: #fafafa;
+    --tile-color-gray-100: #f5f5f5;
+    --tile-color-gray-200: #e5e5e5;
+    --tile-color-gray-300: #d4d4d4;
+    --tile-color-gray-400: #a3a3a3;
+    --tile-color-gray-500: #737373;
+    --tile-color-gray-600: #525252;
+    --tile-color-gray-700: #404040;
+    --tile-color-gray-800: #262626;
+    --tile-color-gray-900: #171717;
+    --tile-color-gray-950: #0a0a0a;
 
-    --tetra-color-primary-50: var(
-        --color-primary-50,
-        var(--tetra-color-gray-50)
-    );
-    --tetra-color-primary-100: var(
+    --tile-color-primary-50: var(--color-primary-50, var(--tile-color-gray-50));
+    --tile-color-primary-100: var(
         --color-primary-100,
-        var(--tetra-color-gray-100)
+        var(--tile-color-gray-100)
     );
-    --tetra-color-primary-200: var(
+    --tile-color-primary-200: var(
         --color-primary-200,
-        var(--tetra-color-gray-200)
+        var(--tile-color-gray-200)
     );
-    --tetra-color-primary-300: var(
+    --tile-color-primary-300: var(
         --color-primary-300,
-        var(--tetra-color-gray-300)
+        var(--tile-color-gray-300)
     );
-    --tetra-color-primary-400: var(
+    --tile-color-primary-400: var(
         --color-primary-400,
-        var(--tetra-color-gray-400)
+        var(--tile-color-gray-400)
     );
-    --tetra-color-primary-500: var(
+    --tile-color-primary-500: var(
         --color-primary-500,
-        var(--tetra-color-gray-500)
+        var(--tile-color-gray-500)
     );
-    --tetra-color-primary-600: var(
+    --tile-color-primary-600: var(
         --color-primary-600,
-        var(--tetra-color-gray-600)
+        var(--tile-color-gray-600)
     );
-    --tetra-color-primary-700: var(
+    --tile-color-primary-700: var(
         --color-primary-700,
-        var(--tetra-color-gray-700)
+        var(--tile-color-gray-700)
     );
-    --tetra-color-primary-800: var(
+    --tile-color-primary-800: var(
         --color-primary-800,
-        var(--tetra-color-gray-800)
+        var(--tile-color-gray-800)
     );
-    --tetra-color-primary-900: var(
+    --tile-color-primary-900: var(
         --color-primary-900,
-        var(--tetra-color-gray-900)
+        var(--tile-color-gray-900)
     );
-    --tetra-color-primary-950: var(
+    --tile-color-primary-950: var(
         --color-primary-950,
-        var(--tetra-color-gray-950)
+        var(--tile-color-gray-950)
     );
 
     /* Text colors */
-    --tetra-text-color: 0, 0, 0;
-    --tetra-color-primary-text-50: var(
+    --tile-text-color: 0, 0, 0;
+    --tile-color-primary-text-50: var(
         --color-text-50,
-        rgba(var(--tetra-text-color), 0.05)
+        rgba(var(--tile-text-color), 0.05)
     );
-    --tetra-color-primary-text-100: var(
+    --tile-color-primary-text-100: var(
         --color-text-100,
-        rgba(var(--tetra-text-color), 0.1)
+        rgba(var(--tile-text-color), 0.1)
     );
-    --tetra-color-primary-text-200: var(
+    --tile-color-primary-text-200: var(
         --color-text-200,
-        rgba(var(--tetra-text-color), 0.2)
+        rgba(var(--tile-text-color), 0.2)
     );
-    --tetra-color-primary-text-300: var(
+    --tile-color-primary-text-300: var(
         --color-text-300,
-        rgba(var(--tetra-text-color), 0.3)
+        rgba(var(--tile-text-color), 0.3)
     );
-    --tetra-color-primary-text-400: var(
+    --tile-color-primary-text-400: var(
         --color-text-400,
-        rgba(var(--tetra-text-color), 0.4)
+        rgba(var(--tile-text-color), 0.4)
     );
-    --tetra-color-primary-text-500: var(
+    --tile-color-primary-text-500: var(
         --color-text-500,
-        rgba(var(--tetra-text-color), 0.5)
+        rgba(var(--tile-text-color), 0.5)
     );
-    --tetra-color-primary-text-600: var(
+    --tile-color-primary-text-600: var(
         --color-text-600,
-        rgba(var(--tetra-text-color), 0.6)
+        rgba(var(--tile-text-color), 0.6)
     );
-    --tetra-color-primary-text-700: var(
+    --tile-color-primary-text-700: var(
         --color-text-700,
-        rgba(var(--tetra-text-color), 0.7)
+        rgba(var(--tile-text-color), 0.7)
     );
-    --tetra-color-primary-text-800: var(
+    --tile-color-primary-text-800: var(
         --color-text-800,
-        rgba(var(--tetra-text-color), 0.8)
+        rgba(var(--tile-text-color), 0.8)
     );
-    --tetra-color-primary-text-900: var(
+    --tile-color-primary-text-900: var(
         --color-text-900,
-        rgba(var(--tetra-text-color), 0.9)
+        rgba(var(--tile-text-color), 0.9)
     );
-    --tetra-color-primary-text-950: var(
+    --tile-color-primary-text-950: var(
         --color-text-950,
-        rgba(var(--tetra-text-color), 0.95)
+        rgba(var(--tile-text-color), 0.95)
     );
 
     /* Spacings */
-    --tetra-spacing: 0.25rem;
+    --tile-spacing: 0.25rem;
 
     /* Theme */
-    --tetra-color-primary-background: var(--color-background, white);
+    --tile-color-primary-background: var(--color-background, white);
 }

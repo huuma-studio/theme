@@ -14,15 +14,15 @@ export function HeroSection(
     ...props
   }: HeroSectionProps,
 ) {
-  className = className ? `tetra__hero ${className}` : "tetra__hero";
+  className = className ? `tile__hero ${className}` : "tile__hero";
 
   return (
     <Section padding="md" maxWidth="7xl" class={className} {...props}>
-      <div class="tetra__hero__wrapper">
-        <h1 class="tetra__hero__heading heading-xl">
+      <div class="tile__hero__wrapper">
+        <h1 class="tile__hero__heading heading-xl">
           {titleSlot}
         </h1>
-        <p class="tetra__hero__teaser">
+        <p class="tile__hero__teaser">
           {children}
         </p>
         {callToActionSlot}

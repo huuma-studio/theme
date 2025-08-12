@@ -7,9 +7,9 @@ export function BenefitsSection(
     SectionProps,
 ) {
   wrapperClass = wrapperClass
-    ? `tetra__benefits__wrapper ${wrapperClass}`
-    : "tetra__benefits__wrapper";
-  className = className ? `tetra__benefits ${className}` : "tetra__benefits";
+    ? `tile__benefits__wrapper ${wrapperClass}`
+    : "tile__benefits__wrapper";
+  className = className ? `tile__benefits ${className}` : "tile__benefits";
   return (
     <Section
       padding="md"
@@ -29,9 +29,9 @@ interface BenefitProps extends Props {
 
 export function Benefit({ titleSlot, children }: BenefitProps) {
   return (
-    <div class="tetra__benefit__item">
-      <h2 class="tetra__benefit__item__heading heading-base">{titleSlot}</h2>
-      <p class="tetra__benefit__item__text">{children}</p>
+    <div class="tile__benefit__item">
+      <h2 class="tile__benefit__item__heading heading-base">{titleSlot}</h2>
+      <p class="tile__benefit__item__text">{children}</p>
     </div>
   );
 }

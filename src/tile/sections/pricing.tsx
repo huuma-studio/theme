@@ -31,10 +31,9 @@ export function PricingSection(
       wrapperClass={wrapperClass}
     >
       <Table>{children}</Table>
-      {appendixSlot && (
-        <div class="tetra__pricing__appendix">{appendixSlot}</div>
-      )}
-      {legendSlot && <div class="tetra__pricing__legend">{legendSlot}</div>}
+      {appendixSlot && <div class="tile__pricing__appendix">{appendixSlot}
+      </div>}
+      {legendSlot && <div class="tile__pricing__legend">{legendSlot}</div>}
     </Section>
   );
 }
@@ -49,7 +48,7 @@ export function PricingTableCell(
   { tableHeader, optionSlot, children, ...rest }: PricingTableCellProps,
 ) {
   if (tableHeader) {
-    const className = "tetra__pricing__table__cell--header";
+    const className = "tile__pricing__table__cell--header";
     rest.class = rest.class ? [rest.class, className].join(" ") : className;
   }
 
@@ -67,11 +66,11 @@ export interface PricingTableCellHeader extends PricingTableCellProps {
 }
 
 export function PricingFeatureGroup({ children }: Props) {
-  return <div class="tetra__pricing__feature-group">{children}</div>;
+  return <div class="tile__pricing__feature-group">{children}</div>;
 }
 
 export function PricingFeatureGroupTitle({ children }: Props) {
   return (
-    <h3 class="tetra__pricing__feature-group__title heading-sm">{children}</h3>
+    <h3 class="tile__pricing__feature-group__title heading-sm">{children}</h3>
   );
 }

@@ -13,7 +13,7 @@ export function ContactSection(
 ) {
   return (
     <Section titleSlot={titleSlot} maxWidth="7xl" padding="lg">
-      <div class="tetra__contect-section__wrapper">
+      <div class="tile__contect-section__wrapper">
         {departements.map((departement) => (
           <ContactDepartementItem
             titleSlot={departement.title}
@@ -41,11 +41,11 @@ function ContactDepartementItem(
   { titleSlot, children, callToActionSlot }: ContactDepartmentItemProps,
 ) {
   return (
-    <div class="tetra__contect__departement">
+    <div class="tile__contect__departement">
       {titleSlot && (
-        <h3 class="tetra__contact__title heading-base">{titleSlot}</h3>
+        <h3 class="tile__contact__title heading-base">{titleSlot}</h3>
       )}
-      {children && <p class="tetra__contact__content">{children}</p>}
+      {children && <p class="tile__contact__content">{children}</p>}
       {callToActionSlot}
     </div>
   );

@@ -21,7 +21,7 @@ export function Section(
     ...props
   }: SectionProps,
 ) {
-  const sectionPadding = `tetra__section--padding-y-${padding ?? "0"}`;
+  const sectionPadding = `tile__section--padding-y-${padding ?? "0"}`;
   props = {
     class: typeof className === "string"
       ? [...className.split(" "), sectionPadding].join(" ")
@@ -29,7 +29,7 @@ export function Section(
     ...props,
   };
   wrapperClass = [
-    `tetra__section__wrapper tetra__section__wrapper--max-w-${
+    `tile__section__wrapper tile__section__wrapper--max-w-${
       maxWidth ?? "full"
     }`,
     wrapperClass,
@@ -41,7 +41,7 @@ export function Section(
     <section {...props}>
       <div class={wrapperClass}>
         {titleSlot && (
-          <h2 class="tetra__section__title heading-md">{titleSlot}</h2>
+          <h2 class="tile__section__title heading-md">{titleSlot}</h2>
         )}
         {children}
       </div>

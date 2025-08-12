@@ -1,4 +1,4 @@
-.tetra__table__row {
+.tile__table__row {
     display: grid;
     grid-template-areas: "a a a" "b c d";
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -10,44 +10,44 @@
         grid-template-columns: 3fr 2fr 2fr 2fr;
     }
 }
-.tetra__table__row > div:nth-child(1) {
+.tile__table__row > div:nth-child(1) {
     font-weight: 600;
     grid-area: a;
     @media (min-width: 768px) {
         font-weight: 500;
     }
 }
-.tetra__table__row > div:nth-child(2) {
+.tile__table__row > div:nth-child(2) {
     grid-area: b;
 }
-.tetra__table__row > div:nth-child(3) {
+.tile__table__row > div:nth-child(3) {
     grid-area: c;
 }
-.tetra__table__row > div:nth-child(4) {
+.tile__table__row > div:nth-child(4) {
     grid-area: d;
 }
-.tetra__table__row:nth-child(even) {
+.tile__table__row:nth-child(even) {
     @media (min-width: 768px) {
         background-color: #00000006;
     }
 }
-.tetra__table__row--header {
+.tile__table__row--header {
     position: sticky;
     top: 3.125rem;
     border-bottom: solid 1px #00000011;
     font-weight: 500;
-    background-color: var(--tetra-color-primary-background);
-    color: var(--tetra-color-primary-texttext-900);
+    background-color: var(--tile-color-primary-background);
+    color: var(--tile-color-primary-texttext-900);
     @media (min-width: 960px) {
         top: 4.125rem;
     }
 }
-.tetra__table__cell {
+.tile__table__cell {
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-block: calc(var(--tetra-spacing) * 4);
+    padding-block: calc(var(--tile-spacing) * 4);
     padding-inline: 0;
     @media (min-width: 768px) {
-        padding-inline: calc(var(--tetra-spacing) * 4);
+        padding-inline: calc(var(--tile-spacing) * 4);
     }
 }

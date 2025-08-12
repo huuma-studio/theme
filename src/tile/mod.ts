@@ -1,8 +1,8 @@
-import { Theme } from "../theme.ts";
+import type { Theme } from "../theme.ts";
 
-const THEME_NAME = "tetra";
+const THEME_NAME = "tile";
 
-export const tetra: Theme = {
+export const tile: Theme = {
   stylesheets: [{
     name: `${THEME_NAME}/styles.css`,
     content: await Deno.readFile(import.meta.dirname! + "/css/styles.css"),
@@ -18,10 +18,6 @@ export const tetra: Theme = {
   }, /* Layout */ {
     name: `${THEME_NAME}/header.css`,
     content: await Deno.readFile(import.meta.dirname! + "/layout/header.css"),
-    entrypoint: true,
-  }, {
-    name: `${THEME_NAME}/main.css`,
-    content: await Deno.readFile(import.meta.dirname! + "/layout/main.css"),
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/footer.css`,
