@@ -1,0 +1,20 @@
+.tetra__image-banner {
+    background-color: var(--image-banner-color-background);
+    color: var(--image-banner-color-text);
+}
+
+.tetra__image-banner__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: calc(var(--tetra-spacing) * 16);
+    padding-inline: calc(var(--tetra-spacing) * 8);
+    padding-block: calc(var(--tetra-spacing) * 16);
+    background-color: var(--tetra-color-gray-100);
+}
+
+.tetra__image-banner__image {
+    max-width: var(--tetra-max-w-7xl);
+    width: 100%;
+    height: auto;
+}

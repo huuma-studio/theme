@@ -1,0 +1,39 @@
+.tetra__section--padding-y--0 {
+    padding-block: 0;
+}
+.tetra__section--padding-y-sm {
+    padding-block: calc(var(--tetra-spacing) * 4);
+}
+.tetra__section--padding-y-md {
+    padding-block: calc(var(--tetra-spacing) * 8);
+    scroll-margin: calc(var(--tetra-spacing) * 8);
+}
+.tetra__section--padding-y-lg {
+    padding-block: calc(var(--tetra-spacing) * 20);
+    scroll-margin: calc(var(--tetra-spacing) * 20);
+}
+.tetra__section--padding-y-xl {
+    padding-block: calc(var(--tetra-spacing) * 23);
+    scroll-margin: calc(var(--tetra-spacing) * 8);
+}
+.tetra__section__wrapper {
+    margin-inline: auto;
+    padding-inline: calc(var(--tetra-spacing) * 4);
+    @media (min-width: 960px) {
+        padding-inline: calc(var(--tetra-spacing) * 8);
+    }
+}
+.tetra__section__wrapper--max-w-full {
+    max-width: 100%;
+}
+.tetra__section__wrapper--max-w-4xl {
+    max-width: var(--tetra-max-w-4xl);
+}
+.tetra__section__wrapper--max-w-7xl {
+    max-width: var(--tetra-max-w-7xl);
+}
+
+.tetra__section__title {
+    margin-top: calc(var(--tetra-spacing) * 4);
+    margin-bottom: calc(var(--tetra-spacing) * 8);
+}

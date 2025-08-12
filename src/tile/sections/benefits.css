@@ -1,0 +1,28 @@
+.tetra__benefits {
+    background-color: var(--benefits-color-background);
+    color: var(--benefits-color-text);
+}
+
+.tetra__benefits__wrapper {
+    display: grid;
+    gap: calc(var(--tetra-spacing) * 16);
+    font-size: var(--text-2xl);
+}
+
+.tetra__benefit__item {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @media (min-width: 756px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    row-gap: calc(var(--tetra-spacing) * 4);
+    column-gap: calc(var(--tetra-spacing) * 16);
+}
+
+.tetra__benefit__item__heading {
+    color: var(--benefit-color-heading, var(--benefit-color-text));
+}
+
+.tetra__benefit__item__text {
+    color: var(--benefit-color-text);
+}
