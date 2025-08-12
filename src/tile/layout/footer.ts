@@ -1,7 +1,7 @@
 import type { Props } from "@huuma/ui";
 import { type JSX, jsx } from "@huuma/ui/jsx-runtime";
 
-interface FooterProps extends Props {
+export interface FooterProps extends Props {
   legalSlot?: JSX.Element;
   logoSlot?: JSX.Element;
 }

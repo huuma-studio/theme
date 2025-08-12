@@ -1,5 +1,5 @@
-import { JSX } from "@huuma/ui/jsx-runtime";
-import { Props } from "@huuma/ui";
+import { type JSX, jsx } from "@huuma/ui/jsx-runtime";
+import type { Props } from "@huuma/ui";
 
 export interface SectionProps extends Props {
   class?: string;
@@ -20,7 +20,7 @@ export function Section(
     titleSlot,
     ...props
   }: SectionProps,
-) {
+): JSX.Element {
   const sectionPadding = `tile__section--padding-y-${padding ?? "0"}`;
   props = {
     class: typeof className === "string"
@@ -37,14 +37,15 @@ export function Section(
     " ",
   );
 
-  return (
-    <section {...props}>
-      <div class={wrapperClass}>
-        {titleSlot && (
-          <h2 class="tile__section__title heading-md">{titleSlot}</h2>
-        )}
-        {children}
-      </div>
-    </section>
-  );
+  return jsx("section", {
+    ...props,
+    children: jsx("div", {
+      class: wrapperClass,
+      children: titleSlot &&
+        jsx("h2", {
+          class: "tile__section__title heading-md",
+          children: [titleSlot, children],
+        }),
+    }),
+  });
 }
