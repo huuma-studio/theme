@@ -40,12 +40,16 @@ export function Section(
   return jsx("section", {
     ...props,
     children: jsx("div", {
-      class: wrapperClass,
-      children: titleSlot &&
+      class: className,
+      wrapperClass,
+      children: [
+        titleSlot &&
         jsx("h2", {
           class: "tile__section__title heading-md",
-          children: [titleSlot, children],
+          children: titleSlot,
         }),
+        children,
+      ],
     }),
   });
 }
