@@ -7,79 +7,92 @@ console.log(import.meta.resolve("./css/styles.css"));
 export const tile: Theme = {
   stylesheets: [{
     name: `${THEME_NAME}/styles.css`,
-    content: await Deno.readFile(import.meta.resolve("./css/styles.css")),
+    content:
+      (await import("./css/styles.css", { with: { type: "bytes" } })).default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/variables.css`,
-    content: await Deno.readFile(import.meta.resolve("./css/variables.css")),
+    content: (await import("./css/variables.css", { with: { type: "bytes" } }))
+      .default,
     entrypoint: false,
   }, {
     name: `${THEME_NAME}/utils.css`,
-    content: await Deno.readFile(import.meta.resolve("./css/utils.css")),
+    content: (await import("./css/utils.css", { with: { type: "bytes" } }))
+      .default,
     entrypoint: false,
   }, /* Layout */ {
     name: `${THEME_NAME}/header.css`,
-    content: await Deno.readFile(import.meta.resolve("./layout/header.css")),
+    content: (await import("./layout/header.css", { with: { type: "bytes" } }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/footer.css`,
-    content: await Deno.readFile(import.meta.resolve("./layout/footer.css")),
+    content: (await import("./layout/footer.css", { with: { type: "bytes" } }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/section.css`,
-    content: await Deno.readFile(import.meta.resolve("./layout/section.css")),
+    content: (await import("./layout/section.css", { with: { type: "bytes" } }))
+      .default,
     entrypoint: true,
   }, /* Sections  */ {
     name: `${THEME_NAME}/hero.css`,
-    content: await Deno.readFile(import.meta.resolve("./sections/hero.css")),
+    content: (await import("./section/hero.css", { with: { type: "bytes" } }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/image-banner.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./sections/image-banner.css"),
-    ),
+    content:
+      (await import("./section/image-banner.css", { with: { type: "bytes" } }))
+        .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/benefits.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./sections/benefits.css"),
-    ),
+    content:
+      (await import("./section/benefits.css", { with: { type: "bytes" } }))
+        .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/pricing.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./sections/pricing.css"),
-    ),
+    content: (await import("./section/pricing.css", {
+      with: { type: "bytes" },
+    }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/integrations.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./sections/integrations.css"),
-    ),
+    content: (await import("./section/integrations.css", {
+      with: { type: "bytes" },
+    }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/support.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./sections/support.css"),
-    ),
+    content: (await import("./section/support.css", {
+      with: { type: "bytes" },
+    }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/contact.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./sections/contact.css"),
-    ),
+    content: (await import("./section/contact.css", {
+      with: { type: "bytes" },
+    }))
+      .default,
     entrypoint: true,
   }, /* Elements */ {
     name: `${THEME_NAME}/table.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./elements/table.css"),
-    ),
+    content: (await import("./table.css", {
+      with: { type: "bytes" },
+    }))
+      .default,
     entrypoint: true,
   }, {
     name: `${THEME_NAME}/fader.css`,
-    content: await Deno.readFile(
-      import.meta.resolve("./elements/fader.css"),
-    ),
+    content: (await import("./table.css", {
+      with: { type: "bytes" },
+    }))
+      .default,
     entrypoint: true,
   }],
 };
