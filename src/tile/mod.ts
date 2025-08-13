@@ -2,6 +2,8 @@ import type { Theme } from "../mod.ts";
 
 const THEME_NAME = "tile";
 
+console.log(import.meta);
+
 export const tile: Theme = {
   stylesheets: [{
     name: `${THEME_NAME}/styles.css`,
