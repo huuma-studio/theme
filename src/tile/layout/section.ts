@@ -39,9 +39,9 @@ export function Section(
 
   return jsx("section", {
     ...props,
+    class: className,
     children: jsx("div", {
-      class: className,
-      wrapperClass,
+      class: wrapperClass,
       children: [
         titleSlot &&
         jsx("h2", {
