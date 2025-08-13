@@ -2,7 +2,23 @@
   "name": "@huuma/theme",
   "version": "0.0.1",
   "exports": {
-    ".": "./src/mod.ts"
+    ".": "./src/mod.ts",
+    "./tailwind": "./src/tailwind.ts",
+    "./tile": "./src/tile/mod.ts",
+    "./tile/fader": "./src/tile/fader.ts",
+    "./tile/icon": "./src/tile/icon.ts",
+    "./tile/table": "./src/tile/table.ts",
+    "./tile/layout/footer": "./src/tile/layout/footer.ts",
+    "./tile/layout/header": "./src/tile/layout/header.ts",
+    "./tile/layout/main": "./src/tile/layout/main.ts",
+    "./tile/layout/section": "./src/tile/layout/section.ts",
+    "./tile/section/benefits": "./src/tile/section/benefits.ts",
+    "./tile/section/contact": "./src/tile/section/contact.ts",
+    "./tile/section/hero": "./src/tile/section/hero.ts",
+    "./tile/section/image-banner": "./src/tile/section/image-banner.ts",
+    "./tile/section/integrations": "./src/tile/section/integrations.ts",
+    "./tile/section/pricing": "./src/tile/section/pricing.ts",
+    "./tile/section/support": "./src/tile/section/support.ts"
   },
   "tasks": {
     "check": "deno check"

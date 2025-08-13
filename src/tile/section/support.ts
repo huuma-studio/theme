@@ -2,7 +2,7 @@ import { type JSX, jsx } from "@huuma/ui/jsx-runtime";
 import type { Props } from "@huuma/ui";
 
 import { Section, type SectionProps } from "../layout/section.ts";
-import { OptionIcon } from "../icons.ts";
+import { OptionIcon } from "../icon.ts";
 
 export function SupportSection(
   { wrapperClass, ...props }: SectionProps,

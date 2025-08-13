@@ -3,7 +3,7 @@ import type { Props } from "@huuma/ui";
 
 import { Table, TableCell, type TableCellProps, TableRow } from "../table.ts";
 import { Section, type SectionProps } from "../layout/section.ts";
-import { OptionIcon } from "../icons.ts";
+import { OptionIcon } from "../icon.ts";
 
 export interface PricingSectionProps extends SectionProps {
   appendixSlot?: JSX.Element;
