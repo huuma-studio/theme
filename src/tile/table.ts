@@ -1,7 +1,7 @@
 import type { Props } from "@huuma/ui";
 import { type JSX, jsx } from "@huuma/ui/jsx-runtime";
 
-export function Table({ children }: Props) {
+export function Table({ children }: Props): JSX.Element {
   return jsx("div", { class: "tile__table", children });
 }
 
