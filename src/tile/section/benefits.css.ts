@@ -25,5 +25,6 @@ export default `.tile__benefits {
 
 .tile__benefit__item__text {
     color: var(--benefit-color-text);
+    font-size: 1.5rem;
 }
 `;
