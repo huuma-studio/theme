@@ -1,4 +1,4 @@
-.tile__banner {
+export default `.tile__banner {
     display: none;
     width: 100%;
     color: var(--banner-color-text);
@@ -112,3 +112,4 @@
         display: none;
     }
 }
+`;

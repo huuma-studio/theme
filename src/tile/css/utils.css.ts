@@ -1,4 +1,4 @@
-.heading-sm {
+export default `.heading-sm {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.3;
@@ -102,3 +102,4 @@
 .tile__button--ghost:hover {
     border: none;
 }
+`;

@@ -1,4 +1,4 @@
-.tile__section--padding-y--0 {
+export default `.tile__section--padding-y--0 {
     padding-block: 0;
 }
 .tile__section--padding-y-sm {
@@ -37,3 +37,4 @@
     margin-top: calc(var(--tile-spacing) * 4);
     margin-bottom: calc(var(--tile-spacing) * 8);
 }
+`;

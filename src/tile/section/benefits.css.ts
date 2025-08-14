@@ -1,5 +1,5 @@
-.tile__benefits {
-    background-color: var(--benefits-color-background);
+export default `.tile__benefits {
+   background-color: var(--benefits-color-background);
     color: var(--benefits-color-text);
 }
 
@@ -26,3 +26,4 @@
 .tile__benefit__item__text {
     color: var(--benefit-color-text);
 }
+`;

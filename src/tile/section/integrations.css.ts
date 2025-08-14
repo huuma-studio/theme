@@ -1,6 +1,7 @@
-.tile__integrations-section {
+export default `.tile__integrations-section {
     background-color: var(--tile-color-primary-50);
 }
 .tile__integrations__cta {
     padding-top: calc(var(--tile-spacing) * 10);
 }
+`;

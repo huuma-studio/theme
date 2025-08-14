@@ -1,4 +1,4 @@
-.tile__table__row {
+export default `.tile__table__row {
     display: grid;
     grid-template-areas: "a a a" "b c d";
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -51,3 +51,4 @@
         padding-inline: calc(var(--tile-spacing) * 4);
     }
 }
+`;

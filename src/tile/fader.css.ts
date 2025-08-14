@@ -1,4 +1,4 @@
-.tile__fader {
+export default `.tile__fader {
     display: grid;
     gap: calc(var(--tile-spacing) * 8);
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -106,3 +106,4 @@
         visibility: visible;
     }
 }
+`;

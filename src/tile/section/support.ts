@@ -8,6 +8,8 @@ export function SupportSection(
   { children, ...props }: SectionProps,
 ): JSX.Element {
   return jsx(Section, {
+    padding: "sm",
+    maxWidth: "7xl",
     ...props,
     children: jsx("div", { class: "tile__support-section__wrapper", children }),
   });

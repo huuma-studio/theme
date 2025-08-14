@@ -1,4 +1,4 @@
-@import url("variables.css");
+export default `@import url("variables.css");
 @import url("utils.css");
 
 html {
@@ -64,3 +64,4 @@ sup {
     vertical-align: top;
     font-weight: 500;
 }
+`;

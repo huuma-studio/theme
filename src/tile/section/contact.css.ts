@@ -1,4 +1,4 @@
-.tile__contect-section__wrapper {
+export default `.tile__contact-section__wrapper {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     @media (min-width: 756px) {
@@ -11,3 +11,4 @@
     font-size: 1.25rem;
     margin-block: calc(var(--tile-spacing) * 4);
 }
+`;

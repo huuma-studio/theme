@@ -1,4 +1,4 @@
-.tile__support-section__wrapper {
+export default `.tile__support-section__wrapper {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     @media (min-width: 756px) {
@@ -56,3 +56,4 @@
     font-weight: 600;
     color: var(--tile-color-primary-text-600);
 }
+`;

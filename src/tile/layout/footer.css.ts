@@ -1,4 +1,4 @@
-.tile__footer {
+export default `.tile__footer {
     background-color: var(
         --footer-color-background,
         var(--tile-color-primary-100)
@@ -36,3 +36,4 @@
     padding-block: calc(var(--tile-spacing) * 4);
     border-top: 1px solid var(--footer-color-border, #00000022);
 }
+`;

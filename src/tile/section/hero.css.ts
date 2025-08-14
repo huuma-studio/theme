@@ -1,4 +1,4 @@
-.tile__hero {
+export default `.tile__hero {
     background-color: var(--hero-color-background);
 }
 .tile__hero__wrapper {
@@ -20,3 +20,4 @@
     font-size: 1.5rem;
     margin-block: calc(var(--tile-spacing) * 4);
 }
+`;

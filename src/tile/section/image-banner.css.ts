@@ -1,4 +1,4 @@
-.tile__image-banner {
+export default `.tile__image-banner {
     background-color: var(--image-banner-color-background);
     color: var(--image-banner-color-text);
 }
@@ -18,3 +18,4 @@
     width: 100%;
     height: auto;
 }
+`;

@@ -1,4 +1,4 @@
-:root {
+export default `:root {
     --tile-max-w-xs: 20rem; /* 320px */
     --tile-max-w-sm: 24rem; /* 384px */
     --tile-max-w-md: 28rem; /* 448px */
@@ -118,3 +118,4 @@
     /* Theme */
     --tile-color-primary-background: var(--color-background, white);
 }
+`;
