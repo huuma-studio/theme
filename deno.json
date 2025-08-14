@@ -1,6 +1,6 @@
 {
   "name": "@huuma/theme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "exports": {
     ".": "./src/mod.ts",
     "./tailwind": "./src/tailwind.ts",
@@ -24,7 +24,7 @@
     "check": "deno check"
   },
   "imports": {
-    "@huuma/icons": "jsr:@huuma/icons@^0.0.1",
+    "@huuma/icons": "jsr:@huuma/icons@^0.1.0",
     "@huuma/route": "jsr:@huuma/route@^0.1.0",
     "@huuma/ui": "jsr:@huuma/ui@^0.1.0"
   },
