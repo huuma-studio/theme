@@ -5,15 +5,11 @@ import { Section, type SectionProps } from "../layout/section.ts";
 import { OptionIcon } from "../icon.ts";
 
 export function SupportSection(
-  { wrapperClass, ...props }: SectionProps,
+  { children, ...props }: SectionProps,
 ): JSX.Element {
-  wrapperClass = wrapperClass
-    ? `"tile__support-section__wrapper" ${wrapperClass}`
-    : "tile__support-section__wrapper";
-
   return jsx(Section, {
     ...props,
-    wrapperClass,
+    children: jsx("div", { class: "tile__support-section__wrapper", children }),
   });
 }
 
