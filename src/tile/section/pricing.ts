@@ -19,6 +19,9 @@ export function PricingSection(
   }: PricingSectionProps,
 ): JSX.Element {
   return jsx(Section, {
+    id: "pricing",
+    padding: "lg",
+    maxWidth: "7xl",
     ...props,
     children: [
       jsx(Table, { children }),
@@ -41,7 +44,6 @@ export function PricingTableCell(
     PricingTableCellProps,
 ): JSX.Element {
   if (tableHeader) {
-    "tile__pricing__table__cell--header";
     className = className
       ? [className, "tile__pricing__table__cell--header"].join(" ")
       : "tile__pricing__table__cell--header";

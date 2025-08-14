@@ -22,20 +22,15 @@ export function Section(
   }: SectionProps,
 ): JSX.Element {
   const sectionPadding = `tile__section--padding-y-${padding ?? "0"}`;
-  props = {
-    class: typeof className === "string"
-      ? [...className.split(" "), sectionPadding].join(" ")
-      : `${sectionPadding}`,
-    ...props,
-  };
-  wrapperClass = [
+  className = className ? `${sectionPadding} ${className}` : sectionPadding;
+
+  const sectionMaxWidth =
     `tile__section__wrapper tile__section__wrapper--max-w-${
       maxWidth ?? "full"
-    }`,
-    wrapperClass,
-  ].join(
-    " ",
-  );
+    }`;
+  wrapperClass = wrapperClass
+    ? `${sectionMaxWidth} ${wrapperClass}`
+    : sectionMaxWidth;
 
   return jsx("section", {
     ...props,
