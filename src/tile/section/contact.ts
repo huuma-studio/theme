@@ -8,24 +8,22 @@ export interface ContactSectionProps extends SectionProps {
 }
 
 export function ContactSection(
-  { departements, wrapperClass, ...props }: ContactSectionProps,
+  { departements, ...props }: ContactSectionProps,
 ): JSX.Element {
-  wrapperClass = wrapperClass
-    ? `tile__contect-section__wrapper ${wrapperClass}`
-    : "tile__contect-section__wrapper";
-
   return jsx(Section, {
     maxWidth: "7xl",
     padding: "lg",
-    wrapperClass,
     ...props,
-    children: departements.map((departement) => (
-      jsx(ContactDepartementItem, {
-        titleSlot: departement.title,
-        callToActionSlot: departement.callToAction,
-        children: departement.content,
-      })
-    )),
+    children: jsx("div", {
+      class: "tile__contact-section__wrapper",
+      children: departements.map((departement) => (
+        jsx(ContactDepartementItem, {
+          titleSlot: departement.title,
+          callToActionSlot: departement.callToAction,
+          children: departement.content,
+        })
+      )),
+    }),
   });
 }
 
