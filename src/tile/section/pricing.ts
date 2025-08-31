@@ -15,13 +15,16 @@ export function PricingSection(
     children,
     appendixSlot,
     legendSlot,
+    class: className,
     ...props
   }: PricingSectionProps,
 ): JSX.Element {
+  className = className ? `tile__pricing ${className}` : "tile__pricing";
   return jsx(Section, {
     id: "pricing",
     padding: "lg",
     maxWidth: "7xl",
+    class: className,
     ...props,
     children: [
       jsx(Table, { children }),

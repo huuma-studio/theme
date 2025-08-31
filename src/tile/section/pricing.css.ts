@@ -1,4 +1,8 @@
-export default `.tile__pricing__table__legend {
+export default `.tile__pricing {
+    background-color: var(--pricing-color-background);
+    color: var(--pricing-color-text);
+}
+.tile__pricing__table__legend {
     display: flex;
     gap: calc(var(--tile-spacing) * 2);
     align-items: center;
@@ -37,6 +41,6 @@ export default `.tile__pricing__table__legend {
 .tile__pricing__legend {
     margin-block: calc(var(--tile-spacing) * 4);
     padding-left: calc(var(--tile-spacing) * 4);
-    color: var(--tile-color-primary-text-400);
+    color: var(--pricing-legend-color-text, --tile-color-primary-text-400);
 }
 `;
