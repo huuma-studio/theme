@@ -7,13 +7,17 @@ export interface IntegrationsSectionProps extends SectionProps {
 }
 
 export function IntegrationsSection(
-  { children, callToActionSlot, titleSlot }: IntegrationsSectionProps,
+  { children, callToActionSlot, titleSlot, class: className }:
+    IntegrationsSectionProps,
 ): JSX.Element {
+  className = className
+    ? `tile__integrations-section ${className}`
+    : "tile__integrations-section";
   return jsx(Section, {
     titleSlot,
     maxWidth: "7xl",
     padding: "lg",
-    class: "tile__integrations-section",
+    class: className,
     children: [
       children,
       callToActionSlot && (

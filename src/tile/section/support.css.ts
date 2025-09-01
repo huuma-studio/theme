@@ -15,7 +15,7 @@ export default `.tile__support-section__wrapper {
     @media (min-width: 756px) {
         padding: calc(var(--tile-spacing) * 8);
     }
-    background-color: var(--tile-color-primary-50);
+    background-color: var(--support-card-color-background, rgba(0, 0, 0, 0.05));
     container-type: inline-size;
 }
 .tile__support__card__header {
