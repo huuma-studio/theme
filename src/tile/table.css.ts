@@ -36,8 +36,8 @@ export default `.tile__table__row {
     top: 3.125rem;
     border-bottom: solid 1px #00000011;
     font-weight: 500;
-    background-color: var(--table-header-color-background, --tile-color-primary-background);
-    color: var(--table-header-color-text ,--tile-color-primary-text-900);
+    background-color: var(--table-header-color-background, var(--tile-color-primary-background));
+    color: var(--table-header-color-text, var(--tile-color-primary-text-900));
     @media (min-width: 960px) {
         top: 4.125rem;
     }
