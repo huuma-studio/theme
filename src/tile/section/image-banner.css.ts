@@ -10,7 +10,7 @@ export default `.tile__image-banner {
     margin-bottom: calc(var(--tile-spacing) * 16);
     padding-inline: calc(var(--tile-spacing) * 8);
     padding-block: calc(var(--tile-spacing) * 16);
-    background-color: var(--tile-color-gray-100);
+    background-color: var(--image-banner-wrapper-color-background, var(--tile-color-gray-100));
 }
 
 .tile__image-banner__image {
