@@ -10,6 +10,7 @@ export default `.tile__hero {
     max-width: var(--tile-max-w-3xl);
     text-align: center;
     color: var(--hero-color-text);
+    box-sizing: border-box;
 }
 
 .tile__hero__heading {
