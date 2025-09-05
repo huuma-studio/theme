@@ -17,9 +17,6 @@ export function HeroSection(
   }: HeroSectionProps,
 ): JSX.Element {
   className = className ? `tile__hero ${className}` : "tile__hero";
-  wrapperClass = wrapperClass
-    ? `tile__hero__wrapper ${wrapperClass}`
-    : "tile__hero__wrapper";
 
   return jsx(Section, {
     padding: "md",
@@ -28,12 +25,17 @@ export function HeroSection(
     wrapperClass,
     ...props,
     children: [
-      jsx("h1", {
-        class: "tile__hero__heading heading-xl",
-        children: titleSlot,
+      jsx("div", {
+        class: "tile__hero__wrapper",
+        children: [
+          jsx("h1", {
+            class: "tile__hero__heading heading-xl",
+            children: titleSlot,
+          }),
+          jsx("p", { class: "tile__hero__teaser", children }),
+          callToActionSlot,
+        ],
       }),
-      jsx("p", { class: "tile__hero__teaser", children }),
-      callToActionSlot,
     ],
   });
 }
