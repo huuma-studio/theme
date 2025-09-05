@@ -2,15 +2,15 @@ export default `.tile__hero {
     background-color: var(--hero-color-background);
 }
 .tile__hero__wrapper {
-    @media (min-width: 768px) {
-        padding-block: calc(var(--tile-spacing) * 23);
-    }
     padding-block: calc(var(--tile-spacing) * 16);
     margin-inline: auto;
     max-width: var(--tile-max-w-3xl);
     text-align: center;
     color: var(--hero-color-text);
     box-sizing: border-box;
+    @media (min-width: 768px) {
+        padding-block: calc(var(--tile-spacing) * 23);
+    }
 }
 
 .tile__hero__heading {
