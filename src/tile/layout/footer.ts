@@ -18,11 +18,11 @@ export function Footer(
             class: "tile__footer__grid",
             children: [
               jsx("div", {
-                class: "tile__footer_col__logo",
+                class: "tile__footer__col__logo",
                 children: logoSlot,
               }),
               jsx("div", {
-                class: "tile__footer_col__nav",
+                class: "tile__footer__col__nav",
                 children: children,
               }),
             ],

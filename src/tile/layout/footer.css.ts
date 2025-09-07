@@ -26,7 +26,7 @@ export default `.tile__footer {
         grid-column: span 1 / span 1;
     }
 }
-.tile__footer_col__nav {
+.tile__footer__col__nav {
     grid-column: span 5 / span 5;
     @media (min-width: 768px) {
         grid-column: span 4 / span 4;
