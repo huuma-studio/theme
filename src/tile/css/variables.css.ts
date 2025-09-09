@@ -67,47 +67,47 @@ export default `:root {
 
     /* Text colors */
     --tile-text-color: 0, 0, 0;
-    --tile-color-primary-text-50: var(
+    --tile-color-text-50: var(
         --color-text-50,
         rgba(var(--tile-text-color), 0.05)
     );
-    --tile-color-primary-text-100: var(
+    --tile-color-text-100: var(
         --color-text-100,
         rgba(var(--tile-text-color), 0.1)
     );
-    --tile-color-primary-text-200: var(
+    --tile-color-text-200: var(
         --color-text-200,
         rgba(var(--tile-text-color), 0.2)
     );
-    --tile-color-primary-text-300: var(
+    --tile-color-text-300: var(
         --color-text-300,
         rgba(var(--tile-text-color), 0.3)
     );
-    --tile-color-primary-text-400: var(
+    --tile-color-text-400: var(
         --color-text-400,
         rgba(var(--tile-text-color), 0.4)
     );
-    --tile-color-primary-text-500: var(
+    --tile-color-text-500: var(
         --color-text-500,
         rgba(var(--tile-text-color), 0.5)
     );
-    --tile-color-primary-text-600: var(
+    --tile-color-text-600: var(
         --color-text-600,
         rgba(var(--tile-text-color), 0.6)
     );
-    --tile-color-primary-text-700: var(
+    --tile-color-text-700: var(
         --color-text-700,
         rgba(var(--tile-text-color), 0.7)
     );
-    --tile-color-primary-text-800: var(
+    --tile-color-text-800: var(
         --color-text-800,
         rgba(var(--tile-text-color), 0.8)
     );
-    --tile-color-primary-text-900: var(
+    --tile-color-text-900: var(
         --color-text-900,
         rgba(var(--tile-text-color), 0.9)
     );
-    --tile-color-primary-text-950: var(
+    --tile-color-text-950: var(
         --color-text-950,
         rgba(var(--tile-text-color), 0.95)
     );
