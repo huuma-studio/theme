@@ -2,7 +2,7 @@ export default `.heading-sm {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.3;
-    color: var(--tile-color-primary-text-900);
+    color: var(--tile-color-text-900);
     @media (min-width: 960px) {
         font-size: 1.5rem;
     }
@@ -19,7 +19,7 @@ export default `.heading-sm {
     font-weight: 500;
     font-size: 2rem;
     line-height: 1.3;
-    color: var(--tile-color-primary-text-900);
+    color: var(--tile-color-text-900);
     @media (min-width: 960px) {
         font-size: 2.5rem;
     }
@@ -28,7 +28,7 @@ export default `.heading-sm {
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 1.1;
-    color: var(--tile-color-primary-text-900);
+    color: var(--tile-color-text-900);
     @media (min-width: 960px) {
         font-size: 3rem;
     }
@@ -37,7 +37,7 @@ export default `.heading-sm {
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 1.1;
-    color: var(--tile-color-primary-text-900);
+    color: var(--tile-color-text-900);
     @media (min-width: 960px) {
         font-size: 3.5rem;
     }
@@ -46,7 +46,7 @@ export default `.heading-sm {
     font-weight: 500;
     font-size: 4.5rem;
     line-height: 1.1;
-    color: var(--tile-color-primary-text-900);
+    color: var(--tile-color-text-900);
 }
 
 .block-text {

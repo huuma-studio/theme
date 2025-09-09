@@ -6,12 +6,12 @@ html {
     line-height: 1.5;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
-    color: var(--tile-color-primary-text-700);
+    color: var(--tile-color-text-700);
     background: var(--tile-color-primary-background);
 }
 
 svg {
-    fill: var(--tile-color-primary-text-700);
+    fill: var(--tile-color-text-700);
 }
 
 .language-switcher {

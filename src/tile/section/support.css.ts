@@ -48,12 +48,12 @@ export default `.tile__support-section__wrapper {
 .tile__support__card__header__price__prefix {
     font-weight: 500;
     letter-spacing: 0.0125rem;
-    color: var(--tile-color-primary-text-500);
+    color: var(--tile-color-text-500);
 }
 
 .tile__support__card__header__price__amount {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--tile-color-primary-text-600);
+    color: var(--tile-color-text-600);
 }
 `;

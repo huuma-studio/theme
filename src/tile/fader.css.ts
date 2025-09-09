@@ -30,7 +30,7 @@ export default `.tile__fader {
 
 .tile__fader__item {
     position: absolute;
-    color: var(--tile-color-primary-text-400);
+    color: var(--tile-color-text-400);
 }
 .tile__fader__item--1 {
     opacity: 1;

@@ -14,7 +14,7 @@ export default `.tile__hero {
 }
 
 .tile__hero__heading {
-    color: var(--hero-color-heading);
+    color: var(--hero-color-heading, --tile-color-text-900);
 }
 
 .tile__hero__teaser {

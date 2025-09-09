@@ -41,6 +41,6 @@ export default `.tile__pricing {
 .tile__pricing__legend {
     margin-block: calc(var(--tile-spacing) * 4);
     padding-left: calc(var(--tile-spacing) * 4);
-    color: var(--pricing-legend-color-text, --tile-color-primary-text-400);
+    color: var(--pricing-legend-color-text, --tile-color-text-400);
 }
 `;

@@ -1,6 +1,6 @@
 {
   "name": "@huuma/theme",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "exports": {
     ".": "./src/mod.ts",
     "./tailwind": "./src/tailwind.ts",
