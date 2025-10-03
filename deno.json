@@ -1,6 +1,6 @@
 {
   "name": "@huuma/theme",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "exports": {
     ".": "./src/mod.ts",
     "./tailwind": "./src/tailwind.ts",
@@ -26,7 +26,7 @@
   "imports": {
     "@huuma/icons": "jsr:@huuma/icons@^0.1.1",
     "@huuma/route": "jsr:@huuma/route@^0.1.0",
-    "@huuma/ui": "jsr:@huuma/ui@^0.1.1"
+    "@huuma/ui": "jsr:@huuma/ui@^0.1.10"
   },
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]

@@ -25,7 +25,7 @@ export function OptionIcon({ option, ...props }: OptionIconProps): JSX.Element {
     : (option === "optional"
       ? jsx(OptionalCircleIcon, { ...props })
       : (option === "false" || option === false)
-      ? undefined
+      ? jsx(ExcludedIcon, { class: "sm:hidden", ...props })
       : option);
 }
 
@@ -54,6 +54,24 @@ export function OptionalCircleIcon(props: IconProps): JSX.Element {
       }),
       jsx("path", {
         d: "M12,7c2.76,0 5,2.24 5,5c0,2.76 -2.24,5 -5,5c-2.76,0 -5,-2.24 -5,-5c-0,-2.76 2.24,-5 5,-5Zm0,2c-1.656,0 -3,1.344 -3,3c0,1.656 1.344,3 3,3c1.656,-0 3,-1.344 3,-3c0,-1.656 -1.344,-3 -3,-3Z",
+      }),
+    ],
+  });
+}
+
+export function ExcludedIcon(props: IconProps): JSX.Element {
+  return jsx("svg", {
+    viewBox: "0 0 24 24",
+    width: "24",
+    ...props,
+    children: [
+      jsx("path", {
+        d: "M21 21L3 3",
+        "stroke-width": "3",
+      }),
+      jsx("path", {
+        d: "M3 21L21 3",
+        "stroke-width": "3",
       }),
     ],
   });
