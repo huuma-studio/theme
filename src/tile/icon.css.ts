@@ -1,7 +1,7 @@
 export default `.tile__excluded-icon {
     stroke: var(--tile-color-text-700);
-    display: none;
+    display: initial;
     @media (min-width: 768px) {
-        display: initial;
+        display: none;
     }
  }`;
