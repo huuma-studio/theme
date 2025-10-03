@@ -17,6 +17,7 @@ import pricing from "./section/pricing.css.ts";
 import support from "./section/support.css.ts";
 
 import fader from "./fader.css.ts";
+import icon from "./icon.css.ts";
 import table from "./table.css.ts";
 
 const THEME_NAME = "tile";
@@ -75,12 +76,16 @@ export const tile: Theme = {
     content: buff(support),
     entrypoint: true,
   }, /* Elements */ {
-    name: `${THEME_NAME}/table.css`,
-    content: buff(table),
-    entrypoint: true,
-  }, {
     name: `${THEME_NAME}/fader.css`,
     content: buff(fader),
+    entrypoint: true,
+  }, {
+    name: `${THEME_NAME}/icon.css`,
+    content: buff(icon),
+    entrypoint: true,
+  }, {
+    name: `${THEME_NAME}/table.css`,
+    content: buff(table),
     entrypoint: true,
   }],
 };

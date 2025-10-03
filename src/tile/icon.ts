@@ -25,7 +25,7 @@ export function OptionIcon({ option, ...props }: OptionIconProps): JSX.Element {
     : (option === "optional"
       ? jsx(OptionalCircleIcon, { ...props })
       : (option === "false" || option === false)
-      ? jsx(ExcludedIcon, { class: "sm:hidden", ...props })
+      ? jsx(ExcludedIcon, { ...props })
       : option);
 }
 
@@ -71,11 +71,11 @@ export function ExcludedIcon(
     ...props,
     children: [
       jsx("path", {
-        d: "M21 21L3 3",
+        d: "M20 20L4 4",
         "stroke-width": "3",
       }),
       jsx("path", {
-        d: "M3 21L21 3",
+        d: "M4 20L20 4",
         "stroke-width": "3",
       }),
     ],

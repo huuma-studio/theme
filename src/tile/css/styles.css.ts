@@ -14,10 +14,6 @@ svg {
     fill: var(--tile-color-text-700);
 }
 
-.tile__excluded-icon {
-    stroke: var(--tile-color-text-700);
-}
-
 .language-switcher {
     position: relative;
     padding-right: var(--spacing-2);
