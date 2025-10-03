@@ -60,7 +60,7 @@ export function OptionalCircleIcon(props: IconProps): JSX.Element {
 }
 
 export function ExcludedIcon(
-  { class: className, props }: IconProps,
+  { class: className, ...props }: IconProps,
 ): JSX.Element {
   return jsx("svg", {
     viewBox: "0 0 24 24",
