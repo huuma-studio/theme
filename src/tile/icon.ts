@@ -62,6 +62,7 @@ export function OptionalCircleIcon(props: IconProps): JSX.Element {
 export function ExcludedIcon(props: IconProps): JSX.Element {
   return jsx("svg", {
     viewBox: "0 0 24 24",
+    class: "tile__excluded-icon",
     width: "24",
     ...props,
     children: [
